@@ -3,12 +3,14 @@ body {
     background-color: #f2f2f2;
 }
 
+
 header {
     background-color: #46434e;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
+
 
 main {
     display: flex;
@@ -17,9 +19,24 @@ main {
     padding: 20px;
 }
 
+
 section {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
     margin: 20px;
+}
+
+
+footer {
+    background-color: #46434e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
