@@ -1,0 +1,14 @@
+
+## 🚀 Usage
+
+Just run the following command at the root of this project
+
+```sh
+npm install
+```
+
+After that you can start Vite for local development (HMR)
+
+```sh
+npx vite
+```
