@@ -1,0 +1,18 @@
+:root {
+    --primary-0: #fff;
+    --primary-50: #e9f3e9;
+    --primary-100: #faffe8;
+    --primary-300: #e6ff94;
+    --primary-500: #9dde8b;
+    --primary-600: #40a578;
+    --primary-800: #004344;
+    --primary-900: #002122;
+
+    --wrapper-max-width-small: 784px;
+    --wrapper-max-width-medium: 952px;
+    --wrapper-max-width: 1288px;
+    --wrapper-padding: clamp(16px, 4.25vw, 56px);
+    --wrapper-width: calc(var(--wrapper-max-width) + (var(--wrapper-padding) * 2));
+    --gutter: max(var(--wrapper-padding), (100% - calc(var(--wrapper-width) - var(--wrapper-padding) * 2)) / 2);
+    --block-pad-y: clamp(48px, 24px + 5vw, 96px);
+}

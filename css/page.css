@@ -1,0 +1,22 @@
+.l-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%
+}
+
+.l-page.is-header-sticky {
+    --top: 0
+}
+
+.l-page__header {
+    z-index: 500;
+    position: sticky;
+    top: var(--top, -100px);
+    transition: top .4s cubic-bezier(.65, 0, .35, 1)
+}
+
+.l-page__main {
+    position: relative;
+    flex: 1 0 auto;
+    ;
+}

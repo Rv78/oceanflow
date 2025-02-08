@@ -1,0 +1,48 @@
+.c-hero {
+    --shadow-color: color-mix(in lab, var(--primary-900), transparent 60%);
+
+    width: 100%;
+    position: relative;
+    background-color: var(--primary-800);
+    color: var(--primary-50);
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    min-height: max(400px, 65vh);
+    background-image: url('/assets/solar-panels-2.webp');
+    /* background-image: url('/assets/solar-panels-1.webp'); */
+    background-position: center;
+    background-size: cover;
+    isolation: isolate;
+    overflow: clip;
+    filter: brightness(91%);
+}
+
+
+.c-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+        linear-gradient(to bottom,
+            transparent,
+            color-mix(in lab, var(--primary-800), transparent 25%) 50%);
+}
+
+
+.c-hero__title {
+    font-size: clamp(46px, 7vw, 72px);
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: -0.1em 0.2em 1px var(--shadow-color);
+}
+
+.c-hero__subtitle {
+    font-size: clamp(24px, 3vw, 38px);
+    font-weight: 400;
+    text-shadow: 0px 1px 1px var(--shadow-color);
+    color: var(--primary-300);
+    margin-top: 0.25em;
+}
