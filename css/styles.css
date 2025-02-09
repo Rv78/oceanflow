@@ -4,6 +4,7 @@
 @import url(page.css);
 
 /* Components */
+@import url(components/button.css);
 @import url(components/hero.css);
 @import url(components/section.css);
 @import url(components/footer.css);

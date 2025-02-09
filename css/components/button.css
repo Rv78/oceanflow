@@ -1,0 +1,30 @@
+.c-button {
+    display: flex;
+    gap: 0.5em;
+    background: var(--primary-600);
+    color: var(--primary-100);
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 150ms;
+
+    &:hover {
+        background: var(--primary-800);
+        color: var(--primary-300);
+    }
+
+    &::before {
+        content: '';
+        --_url: url('/assets/paper-plane.svg');
+
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        -webkit-mask-image: var(--_url);
+        mask-image: var(--_url);
+        background-color: currentColor;
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
